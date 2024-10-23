@@ -1,0 +1,21 @@
+ALGORITHM Sentence 
+VAR
+    character_count: INTEGER;
+    word_count: INTEGER;
+    vowel_count: INTEGER;
+    end_of_sentence: BOOLEAN;
+    
+BEGIN
+ While not end_of_sentence:
+    Read a character (input_character).
+    If input_character is not a point:
+        Increment character_count by 1.
+        If input_character is a space:
+            Increment word_count by 1.
+        If input_character is a vowel (a, e, i, o, u, A, E, I, O, U):
+            Increment vowel_count by 1.
+    Else:
+        Set end_of_sentence to True.
+        If there was at least one character before the point:
+            Increment word_count by 1 (to account for the last word).
+END
