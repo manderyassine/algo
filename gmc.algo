@@ -18,4 +18,5 @@ BEGIN
         Set end_of_sentence to True.
         If there was at least one character before the point:
             Increment word_count by 1 (to account for the last word).
+write character_count, word_count, vowel_count
 END
